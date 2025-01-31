@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: "17" # Adjust this based on your Java version
-          distribution: "adoptopenjdk" # Use 'adoptopenjdk' or 'temurin'
+          distribution: "temurin" # Use 'temurin' instead of 'adoptopenjdk'
 
       # Cache Maven dependencies
       - name: Cache Maven dependencies

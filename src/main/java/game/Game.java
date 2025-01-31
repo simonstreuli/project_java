@@ -11,7 +11,9 @@ public class Game {
     public Game() {
         scanner = new Scanner(System.in);
     }
-
+    public int getAttempts() {
+        return attempts;
+    }
     public void menu() {
         while (true) {
             System.out.println("\n==================================");
@@ -73,7 +75,7 @@ public class Game {
         board.placeRandomShip(new Ship("Kreuzer", 4));
     }
 
-    private void startAttack(String input) {
+    public void startAttack(String input) {
         if (isValidInput(input)) {
             char row = (char) (input.toUpperCase().charAt(0) - 'A');
             int column = Integer.parseInt(input.substring(1)) - 1;
@@ -89,7 +91,7 @@ public class Game {
         }
     }
 
-    private boolean isValidInput(String input) {
+    public boolean isValidInput(String input) {
         if (input.length() < 2 || input.length() > 3)
             return false;
         char rowChar = input.toUpperCase().charAt(0);

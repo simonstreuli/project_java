@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest # This runs the job on the latest version of Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
       # Checkout the repository
@@ -32,13 +32,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      # Build and test the project
       - name: Build with Maven
         run: mvn clean test # This runs the tests
 
-      # Optionally, upload the test results as artifacts (if needed)
       - name: Upload test results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3 # Updated to v3
         with:
           name: test-results
-          path: target/surefire-reports # Adjust this path if needed
+          path: target/surefire-reports

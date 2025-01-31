@@ -39,7 +39,7 @@ public class BoardTest {
         // Test if a ship cannot be placed on an already occupied cell
         board.placeShip(ship1, 0, 0, true);
         Ship ship2 = new Ship("test", 3);
-        boolean placed = board.placeShip(ship2, 0, 1, true); // Overlapping ship
+        boolean placed = board.placeShip(ship2, 0, 1, true); 
         assertFalse(placed);
     }
 

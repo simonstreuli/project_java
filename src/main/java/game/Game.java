@@ -1,3 +1,5 @@
+package src.main.java.game;
+
 import java.util.*;
 
 public class Game {

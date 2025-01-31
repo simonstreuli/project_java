@@ -1,3 +1,5 @@
+package src.main.java.game;
+
 public class Cell {
 
     private char row;

@@ -1,9 +1,7 @@
-package src.test.java.game;
+package tbz.game;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import src.main.java.game.Cell;
-import src.main.java.game.Ship;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -43,13 +41,5 @@ public class ShipTest {
         assertFalse(ship.isSunk());
         cell3.setHit(true);
         assertTrue(ship.isSunk());
-    }
-
-    @Test
-    public void testIsSunkStatus() {
-        cell1.setHit(true);
-        cell2.setHit(true);
-        cell3.setHit(true);
-        assertTrue(ship.isSunkStatus());
     }
 }

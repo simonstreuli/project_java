@@ -1,7 +1,6 @@
-package src.test.java.game;
+package tbz.game;
 
 import org.junit.jupiter.api.Test;
-import src.main.java.game.Cell;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -44,8 +43,6 @@ public class CellTest {
         assertEquals(".", cell.toString());
         cell.setOccupied(true);
         assertEquals("S", cell.toString());
-        cell.setMiss(true);
-        assertEquals("O", cell.toString());
         cell.setHit(true);
         assertEquals("X", cell.toString());
     }

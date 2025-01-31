@@ -1,4 +1,4 @@
-package src.main.java.game;
+package tbz.game;
 
 import java.util.*;
 
@@ -13,6 +13,9 @@ public class Game {
     }
     public int getAttempts() {
         return attempts;
+    }
+    public void setBoard(Board board) {
+        this.board = board;
     }
     public void menu() {
         while (true) {
@@ -67,7 +70,7 @@ public class Game {
         }
     }
 
-    private void setupGame() {
+    public void setupGame() {
         board.placeRandomShip(new Ship("Fregatten", 3));
         board.placeRandomShip(new Ship("Fregatten", 3));
         board.placeRandomShip(new Ship("Minensucher", 2));

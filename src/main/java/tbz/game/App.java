@@ -1,6 +1,11 @@
-package src.main.java.game;
+package tbz.game;
 
-public class Main {
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
     public static void main(String[] args) {
         Game game = new Game();
         game.menu();

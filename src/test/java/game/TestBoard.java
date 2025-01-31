@@ -1,9 +1,8 @@
 package src.test.java.game;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import src.main.java.game.*;;
+import src.main.java.game.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
